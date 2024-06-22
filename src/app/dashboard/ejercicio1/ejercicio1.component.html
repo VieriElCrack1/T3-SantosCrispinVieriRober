@@ -18,3 +18,16 @@
     </mat-card-actions>
 </mat-card>
 
+@if (resultado != "") {
+    <mat-card>
+        <mat-card-content>
+        {{resultado}}
+        </mat-card-content>
+    </mat-card>
+}@else { 
+    <mat-card>
+        <mat-card-content>
+        Esperando Resultado
+        </mat-card-content>
+    </mat-card>
+}
