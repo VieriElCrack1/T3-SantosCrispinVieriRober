@@ -46,6 +46,6 @@ export class Ejercicio2Component {
     valorTotalDeuda = monto + (monto * interes);
     valorTotal = valorTotalDeuda / cuotas;
     
-    this.resultado = "Cantidad De Cuotas " + cuotas + ", Cuotas Por Pagar es : " + valorTotal;
+    this.resultado = "Cantidad De Cuotas a Pagar : " + cuotas + ", Cada Cuota Por Pagar es : " + valorTotal;
   }
 }

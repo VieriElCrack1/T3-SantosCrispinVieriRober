@@ -22,6 +22,13 @@ export class Ejercicio3Component {
     let interes = 0.0;
     let valorTotalDeudaInteres = 0.0;
     
-    
+    if(monto < 4000) {
+      interes = 0.12;
+    }else {
+      interes = 0.10;
+    }
+
+    valorTotalDeudaInteres = monto + (monto * interes);
+    this.resultado = "La Deuda Total es : " + valorTotalDeudaInteres;
   }
 }
