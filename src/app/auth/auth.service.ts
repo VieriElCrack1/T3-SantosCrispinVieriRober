@@ -8,7 +8,7 @@ export class AuthService {
   constructor() { }
 
   login(usuario : String, password : String) {
-    if(usuario != "santos" && password != "12345"){
+    if(usuario != "santos" || password != "12345"){
       sessionStorage.clear();
     }else {
       sessionStorage.setItem("isLogged", 'true');
